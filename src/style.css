@@ -38,9 +38,9 @@
 }
 
 :root {
-	--bg-color: #080808;
-	--bg-header-color: #1b1b1b;
-	--text-color: #9c9c9c;
+  --bg-color: #080808;
+  --bg-header-color: #1b1b1b;
+  --text-color: #9c9c9c;
 }
 
 * {
@@ -106,7 +106,7 @@ body {
 }
 
 .menu__item > a:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .icons {
@@ -115,18 +115,17 @@ body {
 
 .icons__item {
   margin: 0 25px 0 0;
-	transition: transform 0.2s;
-	transform: scale(1);
-	cursor: pointer;
+  transition: transform 0.2s;
+  transform: scale(1);
+  cursor: pointer;
 }
 
-
 .icons__item:last-child {
-	margin: 0;
+  margin: 0;
 }
 
 .icons__item:hover {
-	transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .profile {
