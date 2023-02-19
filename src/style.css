@@ -1,0 +1,235 @@
+/* ibm-plex-mono-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../src/fonts/ibm-plex-mono-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../src/fonts/ibm-plex-mono-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../src/fonts/ibm-plex-mono-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../src/fonts/ibm-plex-mono-v15-latin-regular.woff") format("woff"),
+    /* Modern Browsers */
+      url("../src/fonts/ibm-plex-mono-v15-latin-regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("../src/fonts/ibm-plex-mono-v15-latin-regular.svg#IBMPlexMono")
+      format("svg"); /* Legacy iOS */
+}
+
+/* raleway-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../src/fonts/raleway-v28-latin-800.eot"); /* IE9 Compat Modes */
+  src: url("../src/fonts/raleway-v28-latin-800.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../src/fonts/raleway-v28-latin-800.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../src/fonts/raleway-v28-latin-800.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../src/fonts/raleway-v28-latin-800.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../src/fonts/raleway-v28-latin-800.svg#Raleway") format("svg"); /* Legacy iOS */
+}
+
+:root {
+	--bg-color: #080808;
+	--bg-header-color: #1b1b1b;
+	--text-color: #9c9c9c;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.01em;
+}
+
+body {
+  height: 700px;
+  background-color: var(--bg-color);
+}
+
+.header {
+  height: 70px;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0 95px;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background: var(--bg-header-color);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  margin: 0 70px 0 0;
+  list-style-type: none;
+}
+
+.menu__item:last-child {
+  margin: 0;
+}
+
+.menu__item > a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+.menu__item > a:hover {
+	text-decoration: underline;
+}
+
+.icons {
+  display: flex;
+}
+
+.icons__item {
+  margin: 0 25px 0 0;
+	transition: transform 0.2s;
+	transform: scale(1);
+	cursor: pointer;
+}
+
+
+.icons__item:last-child {
+	margin: 0;
+}
+
+.icons__item:hover {
+	transform: scale(1.2);
+}
+
+.profile {
+  margin: 80px 0 0 0;
+}
+
+.profile-content {
+  display: flex;
+}
+
+.intro {
+  width: 492px;
+  margin: 60px 30px 0 0;
+}
+
+.h1 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 52px;
+  color: white;
+}
+
+.intro__h1 {
+  margin: 0 0 20px 0;
+}
+
+.intro__text {
+  margin: 0 0 30px 0;
+}
+
+.intro__button {
+  padding: 21px 64px;
+  color: white;
+  background: #3f8e00;
+  box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  transition: background 0.4s;
+  cursor: pointer;
+}
+
+.intro__button:hover {
+  background: #346e04;
+}
+
+.intro__button--animation {
+  animation: intro-button-flashing cubic-bezier(0.26, 0.51, 0.37, 0.9) 1s
+    infinite alternate;
+}
+
+@keyframes intro-button-flashing {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.06);
+  }
+}
+
+.intro__button::after {
+  content: "";
+  display: inline-block;
+  margin: 0 0 2px 10px;
+  width: 6px;
+  height: 10px;
+  background: url("img/logo/profile/vector.png") no-repeat;
+}
+
+.profile__photo > img {
+  border-radius: 50%;
+}
+
+.footer {
+  margin-top: 53px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  color: #ffffff;
+}
+
+.footer__row {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__column > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  border: 1px solid #1b1b1b;
+  height: 60px;
+  width: 160px;
+  border-radius: 6px;
+}
