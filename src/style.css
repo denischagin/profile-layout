@@ -591,6 +591,7 @@ textarea {
     margin-left: 10px;
   }
   .menu__item > a {
+    text-align: center;
     font-size: 11px;
     letter-spacing: 0px;
     word-spacing: -3px;
