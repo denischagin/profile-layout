@@ -1,0 +1,37 @@
+.contacts .title-wrapper {
+    margin-bottom: 40px;
+  }
+  
+  .form-wrapper {
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  .form-wrapper form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contacts label {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  .contacts label:first-child {
+    margin-top: 0;
+  }
+  
+  .contacts textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  .contacts .common-button {
+    padding: 16px 0;
+    margin-top: 20px;
+  }
