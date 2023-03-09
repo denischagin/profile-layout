@@ -21,6 +21,7 @@ menuItems.forEach((element, index) => {
     })
 })
 
+<<<<<<< HEAD
 menuBurger.addEventListener('click', e => {
     e.preventDefault()
     pullOutMenu.classList.toggle('active')
@@ -29,4 +30,6 @@ menuBurger.addEventListener('click', e => {
 buttonCloseMenu.addEventListener('click', e => {
     pullOutMenu.classList.remove('active')
 })
+=======
+>>>>>>> cbea69c519d999a8e58fd13ea39c5ba0e6d03992
 
