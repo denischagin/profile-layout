@@ -174,17 +174,23 @@ textarea {
 /* --------- Header --------- */
 
 .header {
+  /* transition: all 1s ease; */
   height: 70px;
   background-color: var(--bg-color-profile);
+  z-index: 5;
 }
+
 
 .header > .container {
   display: flex;
   align-items: center;
   height: 100%;
+  position: relative;
   background: var(--bg-header-color);
   border-radius: 0px 0px 8px 8px;
 }
+
+
 
 .header__content {
   align-items: center;
@@ -215,6 +221,7 @@ textarea {
 .menu__item > a:hover {
   text-decoration: underline;
 }
+
 
 .icons {
   display: flex;
@@ -493,12 +500,12 @@ textarea {
 }
 
 .contacts label {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 5px;
   font-weight: 600;
   font-size: 12px;
-  display: flex;
-  align-items: center;
   color: #ffffff;
 }
 
@@ -526,123 +533,3 @@ textarea {
   background-color: #1b1b1b;
 }
 
-
-
-
-
-
-@media screen and (max-width: 1110px) {
-  .container {
-    padding: 0 20px
-  }  
-}
-
-@media screen and (max-width: 900px) {
-  .header > .container {
-    padding: 5px 10px;
-  }
-
-  .profile {
-    padding-top: 30px;
-  }
-  .profile-content {
-    flex-direction: column-reverse;
-  }
-  .intro {
-    margin-top: 30px;
-    margin-right: 0;
-    align-items: center;
-    text-align: center;
-  }
-  .profile__photo {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-  }
-  .profile__photo > img {
-    width: 280px;
-  }
-  .links {
-    gap: 10px;
-  }
-  .links-title {
-    text-align: center;
-  }
-}
-
-
-@media screen and (max-width: 735px) {
-  .header {
-    height: auto;
-  }
-  .header__nav {
-    width: 100%;
-  }
-  .menu {
-    width: 100%;  
-    justify-content: space-evenly;
-    padding: 5px 0;
-  }
-  .header__content {
-    justify-content: center;
-    flex-direction: column;
-  }
-  .menu__item + .menu__item {
-    margin-left: 10px;
-  }
-  .menu__item > a {
-    text-align: center;
-    font-size: 11px;
-    letter-spacing: 0px;
-    word-spacing: -3px;
-  }
-  .icons {
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 10px;
-  }
-
-
-  .studies .container {
-    max-width: 100%;
-  }
-  .studies .cards-wrapper {
-    row-gap: 10px;
-    width: auto;
-  }
-  .studies .card, .card_revert {
-    
-    flex-direction: column-reverse;
-  }
-  
-  .studies .card_revert {
-    flex-direction: column-reverse;
-  }
-  .technology {
-    margin-top: 10px;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  .common-section {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
-  .studies .card img {
-    width: 300px;
-  }
-  .studies .card-description {
-    align-items: center;
-  }
-  .technology {
-    margin-bottom: 3px;
-  }
-
-  .works .card img {
-    width: 300px;
-  }
-  .works .card {
-    align-items: center;
-  }
-}

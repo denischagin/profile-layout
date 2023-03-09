@@ -6,14 +6,35 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./src/style.css">
+	<link rel="stylesheet" href="./src/blocks/pull-out-menu.css">
+	<link rel="stylesheet" href="./src/adaptive.css">
 	<title>Document</title>
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
 		<div class="container">
+			<div class="pull-out-menu" id="pull-out-menu">
+				<ul class="menu">
+					<li class="menu__item active"><a href="#profile">Home</a></li>
+					<li class="menu__item active"><a href="#studies">Case Studies</a></li>
+					<li class="menu__item active"><a href="#reviews">Testimonials</a></li>
+					<li class="menu__item active"><a href="#works">Recent work</a></li>
+					<li class="menu__item active"><a href="#contacts">Get In Touch</a></li>
+				</ul>
+				<div class="icons">
+					<div class="icons__item"><img src="./src/img/logo/header/linkedIn.png" alt="LinkedIn"></div>
+					<div class="icons__item"><img src="./src/img/logo/header/behance.png" alt="Behance"></div>
+					<div class="icons__item"><img src="./src/img/logo/header/twitter.png" alt="Twitter"></div>
+				</div>
+				<button class="common-button common-button_color_green" id="close-menu">Close</button>
+			</div>
 			<div class="header__content">
-
+				<div class="menu-burger" id="menu-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
 				<nav class="header__nav">
 					<ul class="menu">
 						<li class="menu__item"><a href="#profile">Home</a></li>
@@ -23,6 +44,7 @@
 						<li class="menu__item"><a href="#contacts">Get In Touch</a></li>
 					</ul>
 				</nav>
+
 
 				<div class="icons">
 					<div class="icons__item"><img src="./src/img/logo/header/linkedIn.png" alt="LinkedIn"></div>
